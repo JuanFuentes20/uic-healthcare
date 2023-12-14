@@ -1,6 +1,8 @@
 import logo from './logo.svg';
+import useMultiStepForm from './hooks/useMultiStepForm';
 
 function App() {
+  const { steps, currentIndex, goBack, goForward, step } = useMultiStepForm([])
   return (
     <div className="App">
       <header className="App-header">
