@@ -7,14 +7,28 @@ import GeneralInfo from './components/AppoinmentDocAndTime/GeneralInfo';
 import DatePicker from './components/AppointmentDate/Date';
 import Verification from './components/Verification/Verification';
 import { useState } from 'react';
+import { format } from 'date-fns';
 
+function getOrdinalNum(n) {
+  return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '');
+}
+
+const formatDate = (date) => {
+  const dayWithOrdinal = getOrdinalNum(date.getDate());
+  const month = format(date, 'MMMM');
+  const year = date.getFullYear();
+
+  return `${dayWithOrdinal}, ${month}, ${year}`;
+};
+
+const newDate = new Date();
 
 const initialApointmentForm = {
   department: 0,
   institution : [],
   doctor: [],
-  appointmentDate: new Date(),
-  formattedAppointmentDate: "",
+  appointmentDate: newDate,
+  formattedAppointmentDate: formatDate(newDate),
   appointmentTime: []
 }
 

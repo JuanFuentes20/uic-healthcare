@@ -1,0 +1,11 @@
+.calendar-wrapper, .rdrCalendarWrapper {
+    width: 100%;
+}
+
+.calendar-wrapper .rdrMonthAndYearWrapper {
+    width: 100%;
+}
+
+.calendar-wrapper .rdrMonth {
+    width: auto;
+}
