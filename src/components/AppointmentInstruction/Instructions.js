@@ -7,7 +7,7 @@ const Instructions = ({setShowInstructions}) => {
         setShowInstructions(prev => false)
     }
     return (
-        <div className='wrapper'>
+        <div className='wrapper centered'>
             <div className='instructions'>
                 <header>Instructions for booking an appointment</header>
                 <p>If you are using the service for the first time, please complete the health check form before making the appointment.</p>
