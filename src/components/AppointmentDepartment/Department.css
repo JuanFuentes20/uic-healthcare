@@ -1,0 +1,39 @@
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 4rem 0;
+}
+
+.box {
+    width: 87px;
+    height: 87px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFF7F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
+.info {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #FFAD72;
+    background: var(--414141, #FFF);
+    margin-bottom: 5rem;
+    padding: 1rem;
+}
+
+.info p {
+    line-height: normal;
+    margin: 0;
+}
+.active {
+    background-color: #FFAD72;
+}

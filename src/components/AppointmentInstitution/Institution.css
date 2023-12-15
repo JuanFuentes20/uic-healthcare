@@ -1,0 +1,24 @@
+.select-wrapper {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.custom-select {
+    min-height: 50px !important;
+    border-radius: 10px !important;
+    background-color: #FFF7F2 !important;
+    padding: 4px 8px !important;
+}
+
+.custom-select span {
+    background-color: #FFF7F2 !important;
+    border-bottom: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.css-z2hyoe-ItemComponent.react-dropdown-select-item-selected {
+    color: #FFAD72 !important;
+    border-bottom: none !important;
+}

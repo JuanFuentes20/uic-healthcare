@@ -1,0 +1,19 @@
+{
+    "departments": [{
+        "name": "Health Assessment",
+        "info": "Comprehensive evaluation, vital signs, medical history, lifestyle analysis, and current health status for personalized wellness insights."
+    },
+    {"name": "Antenatal Care",
+    "info": "Antenatal care is the care you get from health professionals during your pregnancy."},
+    {"name": "Postnatal Service",
+    "info": "Tailored care for new mothers and infants, including postpartum support, health monitoring, and infant development guidance."},
+    {"name": "Child health",
+    "info": "Holistic care for children, covering vaccinations, growth monitoring, developmental milestones, nutrition guidance, and wellness checks for optimal health."},
+    {"name": "Psychosocial health",
+    "info": "Expert support for mental and emotional well-being, encompassing counseling, stress management, coping strategies, and interpersonal relationship guidance."},
+    {"name": "Pre-pregnancy Check-up",
+    "info": "Comprehensive assessment for aspiring parents, addressing reproductive health, lifestyle factors, and medical considerations to optimize chances of a healthy pregnancy."}],
+    "institution" : ["Haagan Neuvola","Jakomäen neuvola","Malmin neuvola","Oulunkylän neuvola","Lauttasaaren neuvola","Puistolan neuvola"],
+    "doctors": ["Aino Nieminen", "Eero Virtanen", "Tuuli Koskinen", "Mikko Järvinen"],
+    "appointmentTimes": ["8:00 - 8:30", "8:30 - 9:00", "9:00 - 9:30", "9:30 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 13:00", "13:00 - 14:00", "14:00 - 15:00", "15:00 - 16:00"]
+}
