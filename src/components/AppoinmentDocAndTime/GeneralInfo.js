@@ -20,11 +20,11 @@ const GeneralInfo = ({appointmentForm, setAppointmentForm}) => {
         </div>
         <header>Select the doctor:</header>
         <div className='select-wrapper'>
-        <Select className='custom-select' placeholder='-Select-' required options={optionsDoc} values={appointmentForm.doctor} onChange={(values) => setAppointmentForm(prev => ({...prev, doctor: values}))} />
+        <Select className='custom-select' searchable={false} placeholder='-Select-' required options={optionsDoc} values={appointmentForm.doctor} onChange={(values) => setAppointmentForm(prev => ({...prev, doctor: values}))} />
         </div>
         <header>Select the time:</header>
         <div className='select-wrapper'>
-        <Select className='custom-select' placeholder='-Select-' required options={optionsTime} values={appointmentForm.appointmentTime} onChange={(values) => setAppointmentForm(prev => ({...prev, appointmentTime: values}))} />
+        <Select className='custom-select' searchable={false} placeholder='-Select-' required options={optionsTime} values={appointmentForm.appointmentTime} onChange={(values) => setAppointmentForm(prev => ({...prev, appointmentTime: values}))} />
         </div>
         </div>
     );
