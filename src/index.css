@@ -13,13 +13,8 @@ body {
   overflow-y: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .mobile-wrapper {
-  height: 100svh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,7 +22,7 @@ code {
 
 .container {
   margin: 0 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   flex: 1;
   position: relative;
   display: flex;
@@ -61,7 +56,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .navigation p {
