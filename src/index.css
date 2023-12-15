@@ -87,6 +87,11 @@ button {
   background: #FAA75C;
   border: none;
 }
+.large-btn {
+  width: 100%;
+  height: 51px;
+  color: white; 
+}
 
 .large {
   width: 12rem;

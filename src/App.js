@@ -5,6 +5,7 @@ import Instructions from './components/AppointmentInstruction/Instructions';
 import Summary from './components/Summary/Summary';
 import GeneralInfo from './components/AppoinmentDocAndTime/GeneralInfo';
 import DatePicker from './components/AppointmentDate/Date';
+import Verification from './components/Verification/Verification';
 import { useState } from 'react';
 
 
@@ -19,12 +20,13 @@ const initialApointmentForm = {
 
 function App() {
   const [appointmentForm, setAppointmentForm] = useState(initialApointmentForm)
-  const { steps, currentIndex, goBack, goForward, step } = useMultiStepForm({steps: [
+  const { steps, currentIndex, goBack, goForward, goToStart, step } = useMultiStepForm({steps: [
     <Department appointmentForm={appointmentForm} setAppointmentForm={setAppointmentForm}/>, 
     <Institution appointmentForm={appointmentForm} setAppointmentForm={setAppointmentForm}/>, 
     <DatePicker appointmentForm={appointmentForm} setAppointmentForm={setAppointmentForm}/>, 
     <GeneralInfo appointmentForm={appointmentForm} setAppointmentForm={setAppointmentForm}/>, 
-    <Summary appointmentForm={appointmentForm}/>
+    <Summary appointmentForm={appointmentForm}/>,
+    <Verification appointmentForm={appointmentForm}/>
   ]})
   const [showInstructions, setShowInstructions] = useState(true)
 
@@ -37,6 +39,12 @@ function App() {
       goBack();
     }
   }
+
+  const goBeginning = () => {
+    setAppointmentForm(initialApointmentForm)
+    setShowInstructions(true)
+    goToStart()
+  }
   return (
     <div className='mobile-wrapper'>
       <div className="container">
@@ -46,10 +54,16 @@ function App() {
       <div className='bottom-navigation'>
         <p className='step-indicator'>{currentIndex + 1} of {steps.length}</p>
         <div className='nav-buttons'>
-          <button className='small back' onClick={handleBack}>Back</button>
-          {(currentIndex +1 !== steps.length) ? <button className='small next' onClick={goForward}>Next</button> : 
-          <button className='small next' onClick={goForward}>Confirm</button>}
-          
+          {(currentIndex + 1 !== steps.length) && <button className='small back' onClick={handleBack}>Back</button>}
+          {(currentIndex + 1 < steps.length - 1) ? (
+              <button className='small next' onClick={goForward}>Next</button>
+            ) : (
+              (currentIndex + 1 === steps.length) ? (
+                <button className='next large-btn' onClick={goBeginning}>Finish</button>
+              ) : (
+                <button className='small next' style={{color: 'white'}} onClick={goForward}>Confirm</button>
+              )
+            )}  
         </div>
       </div>
       </>

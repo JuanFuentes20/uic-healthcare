@@ -18,11 +18,16 @@ function useMultiStepForm({steps}) {
         })
     }
 
+    const goToStart = () => {
+        setCurrentIndex(prev => 0)
+    }
+
     return {
         steps,
         currentIndex,
         goBack,
         goForward,
+        goToStart,
         step: steps[currentIndex]
     }
 }
