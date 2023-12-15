@@ -12,7 +12,7 @@ const Institution = ({appointmentForm, setAppointmentForm}) => {
         <div className='wrapper'>
         <header>Select the service :</header>
         <div className='select-wrapper'>
-        <Select className='custom-select' placeholder='-Select-' required options={options} values={appointmentForm.institution} onChange={(values) => setAppointmentForm(prev => ({...prev, institution: values}))} />
+        <Select className='custom-select' searchable={false} placeholder='-Select-' required options={options} values={appointmentForm.institution} onChange={(values) => setAppointmentForm(prev => ({...prev, institution: values}))} />
         </div>
         </div>
     );
