@@ -106,6 +106,7 @@ const DatePicker = ({appointmentForm, setAppointmentForm}) => {
         <div className='calendar-wrapper'>
             <Calendar
             date={date}
+            minDate={new Date()}
             dayContentRenderer={customDayContent}
             onChange={(date) => handleSelect(date)}
         />
