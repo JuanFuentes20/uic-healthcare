@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/uic-healthcare/static/css/main.9312b08c.css",
-    "main.js": "/uic-healthcare/static/js/main.d218cbc9.js",
+    "main.css": "/uic-healthcare/static/css/main.cd08743f.css",
+    "main.js": "/uic-healthcare/static/js/main.613d8b9a.js",
     "index.html": "/uic-healthcare/index.html",
-    "main.9312b08c.css.map": "/uic-healthcare/static/css/main.9312b08c.css.map",
-    "main.d218cbc9.js.map": "/uic-healthcare/static/js/main.d218cbc9.js.map"
+    "main.cd08743f.css.map": "/uic-healthcare/static/css/main.cd08743f.css.map",
+    "main.613d8b9a.js.map": "/uic-healthcare/static/js/main.613d8b9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9312b08c.css",
-    "static/js/main.d218cbc9.js"
+    "static/css/main.cd08743f.css",
+    "static/js/main.613d8b9a.js"
   ]
 }
