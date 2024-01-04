@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+This project was done for a quick UI demonstration. It was part of a course assignment and focused solely on the UI and not in the actual functionalities. The UI was done based on the designed figma wireframe.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
